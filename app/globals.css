@@ -1,9 +1,11 @@
 :root {
-  --max-width: 1200px;
+  --max-width: 1310px;
   --border-radius: 16px;
 
-  --color-rgb: 35, 23, 13;
-  --background-rgb: 239, 237, 231;
+  --clr-dark: 35, 23, 13;
+  --clr-light: 239, 237, 231;
+  --clr-black: 24, 24, 24;
+  --clr-white: 238, 238, 238;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,8 +28,8 @@ body {
 }
 
 body {
-  color: rgb(var(--color-rgb));
-  background-color: rgb(var(--background-rgb));
+  color: rgb(var(--clr-dark));
+  background-color: rgb(var(--clr-light));
 }
 
 a {
