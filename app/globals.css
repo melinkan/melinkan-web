@@ -10,8 +10,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-rgb: 239, 237, 231;
-    --background-rgb: 35, 23, 13;
+    --clr-dark: 239, 237, 231;
+    --clr-light: 35, 23, 13;
   }
 }
 
