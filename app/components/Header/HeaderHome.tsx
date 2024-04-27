@@ -1,10 +1,12 @@
 import Image from "next/image";
 
-import HeaderSubtitle from "@/styled/Header/HeaderSubtitle";
-import HeaderTitle from "@/styled/Header/HeaderTitle";
-import HeaderWrapper from "@/styled/Header/HeaderWrapper";
-import HeaderImage from "@/styled/Header/HeaderImage";
 import profileImage from "@/public/melin-kan.jpg";
+import {
+  HeaderImage,
+  HeaderSubtitle,
+  HeaderTitle,
+  HeaderWrapper,
+} from "../styled/StyledHeader";
 
 const titleVariants = {
   offscreen: { x: -100, opacity: 0 },
@@ -28,19 +30,6 @@ const subtitleVariants = {
       type: "spring",
       duration: 0.8,
       delay: 0.5,
-    },
-  },
-};
-
-const descriptionVariants = {
-  offscreen: { x: -100, opacity: 0 },
-  onscreen: {
-    x: 0,
-    opacity: 1,
-    transition: {
-      type: "spring",
-      duration: 0.8,
-      delay: 0.7,
     },
   },
 };
