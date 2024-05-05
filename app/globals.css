@@ -51,6 +51,10 @@ img {
   shape-margin: 1rem;
 }
 
+p {
+  font-family: var(--font-inter);
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
