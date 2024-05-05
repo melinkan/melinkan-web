@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Syne } from "next/font/google";
 import StyledComponentsRegistry from "./lib/registry";
@@ -20,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={syne.className}>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <Analytics />
       </body>
     </html>
   );
