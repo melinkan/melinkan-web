@@ -68,4 +68,8 @@ export const StyledWhatIDoCardTitle = styled(motion.h3)`
   font-weight: 500;
 `;
 
-export const StyledWhatIDoCardDescription = styled(motion.p)``;
+export const StyledWhatIDoCardDescription = styled(motion.p)`
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+`;

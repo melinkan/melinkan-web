@@ -12,19 +12,23 @@ import WhatIDoCard from "./WhatIDoCard";
 const cardData = [
   {
     title: "Web Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
+    description:
+      "I build performant and responsive websites and modern web applications using latest technologies.",
   },
   {
     title: "UI Design",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
+    description:
+      "I design user-friendly and visually appealing user interfaces that enhance user interaction and satisfaction.",
   },
   {
     title: "SEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
+    description:
+      "I optimize websites to improve their visibility in search engine results, increasing organic traffic and engagement.",
   },
   {
     title: "Digital Marketing",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
+    description:
+      "I develop and implement strategic digital marketing campaigns that drive growth, enhance brand awareness, and increase conversions.",
   },
 ];
 
