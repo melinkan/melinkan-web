@@ -2,10 +2,11 @@ import Image from "next/image";
 
 import profileImage from "@/public/melin-kan.jpg";
 import {
-  HeaderImage,
-  HeaderSubtitle,
-  HeaderTitle,
-  HeaderWrapper,
+  StyledHeaderImage,
+  StyledHeaderSubtitle,
+  StyledHeaderTitle,
+  StyledHeaderWrapper,
+  StyledHeaderInfoWrapper,
 } from "../styled/StyledHeader";
 
 const titleVariants = {
@@ -49,33 +50,33 @@ const imageVariants = {
 
 export function HeaderHome() {
   return (
-    <HeaderWrapper>
-      <div>
-        <HeaderTitle
+    <StyledHeaderWrapper>
+      <StyledHeaderInfoWrapper>
+        <StyledHeaderTitle
           initial="offscreen"
           animate="onscreen"
           exit="offscreen"
           variants={titleVariants}
         >
           Hello, I&apos;m Melin
-        </HeaderTitle>
-        <HeaderSubtitle
+        </StyledHeaderTitle>
+        <StyledHeaderSubtitle
           initial="offscreen"
           animate="onscreen"
           exit="offscreen"
           variants={subtitleVariants}
         >
           A Web Developer and UI Designer
-        </HeaderSubtitle>
-      </div>
-      <HeaderImage
+        </StyledHeaderSubtitle>
+      </StyledHeaderInfoWrapper>
+      <StyledHeaderImage
         initial="offscreen"
         animate="onscreen"
         exit="offscreen"
         variants={imageVariants}
       >
         <Image src={profileImage} placeholder="blur" alt="Melin Kan" />
-      </HeaderImage>
-    </HeaderWrapper>
+      </StyledHeaderImage>
+    </StyledHeaderWrapper>
   );
 }

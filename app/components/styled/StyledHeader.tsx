@@ -5,11 +5,11 @@ import styled from "styled-components";
 
 import Container from "./Container";
 
-export const HeaderWrapper = styled(Container)`
+export const StyledHeaderWrapper = styled(Container)`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  gap: 48px;
+  gap: 64px;
   border-bottom: 1px solid rgb(var(--clr-dark));
 
   @media (max-width: 992px) {
@@ -19,7 +19,11 @@ export const HeaderWrapper = styled(Container)`
   }
 `;
 
-export const HeaderTitle = styled(motion.h1)`
+export const StyledHeaderInfoWrapper = styled(motion.div)`
+  flex: 3;
+`;
+
+export const StyledHeaderTitle = styled(motion.h1)`
   margin-bottom: 16px;
   font-size: 48px;
   font-weight: 400;
@@ -32,11 +36,17 @@ export const HeaderTitle = styled(motion.h1)`
   }
 `;
 
-export const HeaderSubtitle = styled(motion.h2)`
+export const StyledHeaderSubtitle = styled(motion.h2)`
   font-size: 72px;
   font-weight: 500;
   line-height: 1;
   color: rgb(var(--clr-dark));
+  margin-bottom: 16px;
+  width: 75%;
+
+  @media (max-width: 1440px) {
+    width: 100%;
+  }
 
   @media (max-width: 992px) {
     font-size: 36px;
@@ -44,7 +54,9 @@ export const HeaderSubtitle = styled(motion.h2)`
   }
 `;
 
-export const HeaderImage = styled(motion.div)`
+export const StyledHeaderImage = styled(motion.div)`
+  flex: 2;
+
   img {
     border-radius: 5vw;
   }
