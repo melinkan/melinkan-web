@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import { Syne, Inter } from "next/font/google";
+import { Syne } from "next/font/google";
 import StyledComponentsRegistry from "./lib/registry";
 import "./globals.css";
 
-export const syne = Syne({ subsets: ["latin"] });
-export const inter = Inter({ subsets: ["latin"] });
+const syne = Syne({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Home - Melin Kan",
