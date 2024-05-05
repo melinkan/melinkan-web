@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
 
-const Container = styled(motion.div)`
+const Container = styled(motion.section)`
   max-width: var(--max-width);
   width: 100%;
   margin: 0 auto;
