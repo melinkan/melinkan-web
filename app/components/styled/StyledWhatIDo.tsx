@@ -36,14 +36,14 @@ export const StyledWhatIDoGrid = styled(motion.div)`
     top: 50%;
     left: 0;
     width: 100%;
-    height: 0.1px;
+    height: 1px;
     transform: translateY(-50%);
   }
 
   &:after {
     top: 0;
     left: 50%;
-    width: 0.1px;
+    width: 1px;
     height: 100%;
     transform: translateX(-50%);
   }
