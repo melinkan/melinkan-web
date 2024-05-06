@@ -2,7 +2,7 @@ import {
   StyledWhatIDoCardDescription,
   StyledWhatIDoCardTitle,
   StyledWhatIDoCard,
-} from "../styled/StyledWhatIDo";
+} from "./StyledWhatIDo";
 
 interface WhatIDoCardProps {
   title: string;

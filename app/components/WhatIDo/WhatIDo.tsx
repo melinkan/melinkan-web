@@ -2,11 +2,8 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 
-import {
-  StyledWhatIDoGrid,
-  StyledWhatIDoWrapper,
-} from "../styled/StyledWhatIDo";
-import SectionTitle from "../styled/StyledSectionTitles";
+import { StyledWhatIDoGrid, StyledWhatIDoWrapper } from "./StyledWhatIDo";
+import SectionTitle from "../SectionTitles";
 import WhatIDoCard from "./WhatIDoCard";
 
 const cardData = [
@@ -50,7 +47,7 @@ export function WhatIDo() {
   };
 
   return (
-    <StyledWhatIDoWrapper>
+    <StyledWhatIDoWrapper id="whatido">
       <SectionTitle title="What i do" />
       <StyledWhatIDoGrid
         initial="offscreen"

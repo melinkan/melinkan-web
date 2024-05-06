@@ -33,8 +33,6 @@ body {
 body {
   color: rgb(var(--clr-dark));
   background-color: rgb(var(--clr-light));
-  padding-left: 36px;
-  padding-right: 36px;
 }
 
 a {

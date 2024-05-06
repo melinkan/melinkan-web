@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
 
-import Container from "./Container";
+import Container from "../Container";
 
 export const StyledWhatIDoWrapper = styled(Container)`
   display: flex;

@@ -10,7 +10,7 @@ import {
   StyledSiteTitle,
   StyledSocialLink,
   StyledSocialsWrapper,
-} from "../styled/StyledFooter";
+} from "./StyledFooter";
 
 export function Footer() {
   const ref = useRef(null);

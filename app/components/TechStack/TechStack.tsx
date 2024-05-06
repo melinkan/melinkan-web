@@ -4,12 +4,12 @@ import Marquee from "react-fast-marquee";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 
-import SectionTitle from "../styled/StyledSectionTitles";
+import SectionTitle from "../SectionTitles";
 import {
   StyledMarqueeMotion,
   StyledMarqueeWrapper,
   StyledTechStackWrapper,
-} from "../styled/StyledTechStack";
+} from "./StyledTechStack";
 
 import {
   SiFigma,
@@ -43,7 +43,7 @@ export function TechStack() {
   };
 
   return (
-    <StyledTechStackWrapper>
+    <StyledTechStackWrapper id="techstack">
       <SectionTitle title="Tech Stack" />
       <StyledMarqueeMotion
         initial="offscreen"

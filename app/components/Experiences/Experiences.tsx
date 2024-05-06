@@ -1,6 +1,6 @@
 "use client";
 
-import SectionTitle from "../styled/StyledSectionTitles";
+import SectionTitle from "../SectionTitles";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 
@@ -11,7 +11,7 @@ import {
   StyledExperienceDescription,
   StyledExperienceTitle,
   StyledExperiencesWrapper,
-} from "../styled/StyledExperiences";
+} from "./StyledExperiences";
 
 export function Experiences() {
   const ref = useRef(null);
@@ -31,7 +31,7 @@ export function Experiences() {
   };
 
   return (
-    <StyledExperiencesWrapper>
+    <StyledExperiencesWrapper id="experiences">
       <SectionTitle title="Work Experiences" />
       <StyledExperienceContainer
         initial="offscreen"

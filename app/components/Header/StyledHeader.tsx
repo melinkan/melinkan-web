@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
 
-import Container from "./Container";
+import Container from "../Container";
 
 export const StyledHeaderWrapper = styled(Container)`
   display: flex;
@@ -11,6 +11,7 @@ export const StyledHeaderWrapper = styled(Container)`
   align-items: flex-end;
   gap: 64px;
   border-bottom: 1px solid rgb(var(--clr-dark));
+  padding-top: 110px;
 
   @media (max-width: 992px) {
     flex-direction: column;

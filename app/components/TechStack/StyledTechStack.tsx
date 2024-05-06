@@ -1,7 +1,7 @@
 "use client";
 
 import styled from "styled-components";
-import Container from "./Container";
+import Container from "../Container";
 import Image from "next/image";
 import { motion } from "framer-motion";
 

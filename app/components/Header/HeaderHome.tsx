@@ -7,7 +7,7 @@ import {
   StyledHeaderTitle,
   StyledHeaderWrapper,
   StyledHeaderInfoWrapper,
-} from "../styled/StyledHeader";
+} from "./StyledHeader";
 
 const titleVariants = {
   offscreen: { x: -100, opacity: 0 },
