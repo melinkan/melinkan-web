@@ -10,7 +10,7 @@ const syne = Syne({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Home - Melin Kan",
   description:
-    "Meet Melin, a passionate web developer & designer with expertise in technical SEO and creating user-friendly, optimized websites. Always keeping up with the latest trends.",
+    "I'm Melin, a passionate web developer & designer with expertise in SEO and creating user-friendly, optimized websites.",
 };
 
 export default function RootLayout({

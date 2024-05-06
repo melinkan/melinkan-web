@@ -13,7 +13,7 @@ export const StyledFooterWrapper = styled(Container)`
   gap: 24px;
 
   @media (max-width: 992px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: flex-start;
   }
 `;

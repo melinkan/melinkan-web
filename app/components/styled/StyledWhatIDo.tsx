@@ -50,7 +50,7 @@ export const StyledWhatIDoGrid = styled(motion.div)`
 
   @media (max-width: 640px) {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
     row-gap: 24px;
 
     &:before,
@@ -63,7 +63,7 @@ export const StyledWhatIDoGrid = styled(motion.div)`
 export const StyledWhatIDoCard = styled(motion.div)``;
 
 export const StyledWhatIDoCardTitle = styled(motion.h3)`
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   font-size: 24px;
   font-weight: 500;
 `;
