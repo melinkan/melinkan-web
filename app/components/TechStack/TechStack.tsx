@@ -8,6 +8,7 @@ import SectionTitle from "../SectionTitles";
 import {
   StyledMarqueeMotion,
   StyledMarqueeWrapper,
+  StyledTechStackContainer,
   StyledTechStackWrapper,
 } from "./StyledTechStack";
 
@@ -43,51 +44,53 @@ export function TechStack() {
   };
 
   return (
-    <StyledTechStackWrapper id="techstack">
-      <SectionTitle title="Tech Stack" />
-      <StyledMarqueeMotion
-        initial="offscreen"
-        animate="onscreen"
-        exit="offscreen"
-        variants={cardVariants}
-        ref={ref}
-      >
-        <Marquee direction="right" speed={75}>
-          <StyledMarqueeWrapper>
-            <SiJavascript />
-          </StyledMarqueeWrapper>
-          <StyledMarqueeWrapper>
-            <SiTypescript />
-          </StyledMarqueeWrapper>
-          <StyledMarqueeWrapper>
-            <IoLogoReact />
-          </StyledMarqueeWrapper>
-          <StyledMarqueeWrapper>
-            <SiNextdotjs />
-          </StyledMarqueeWrapper>
-          <StyledMarqueeWrapper>
-            <SiWordpress />
-          </StyledMarqueeWrapper>
-          <StyledMarqueeWrapper>
-            <SiFigma />
-          </StyledMarqueeWrapper>
-          <StyledMarqueeWrapper>
-            <SiFramer />
-          </StyledMarqueeWrapper>
-          <StyledMarqueeWrapper>
-            <SiWebflow />
-          </StyledMarqueeWrapper>
-          <StyledMarqueeWrapper>
-            <SiSemrush />
-          </StyledMarqueeWrapper>
-          <StyledMarqueeWrapper>
-            <SiGoogletagmanager />
-          </StyledMarqueeWrapper>
-          <StyledMarqueeWrapper>
-            <SiGoogleanalytics />
-          </StyledMarqueeWrapper>
-        </Marquee>
-      </StyledMarqueeMotion>
-    </StyledTechStackWrapper>
+    <StyledTechStackContainer id="techstack">
+      <StyledTechStackWrapper>
+        <SectionTitle title="Tech Stack" />
+        <StyledMarqueeMotion
+          initial="offscreen"
+          animate="onscreen"
+          exit="offscreen"
+          variants={cardVariants}
+          ref={ref}
+        >
+          <Marquee direction="right" speed={75}>
+            <StyledMarqueeWrapper>
+              <SiJavascript />
+            </StyledMarqueeWrapper>
+            <StyledMarqueeWrapper>
+              <SiTypescript />
+            </StyledMarqueeWrapper>
+            <StyledMarqueeWrapper>
+              <IoLogoReact />
+            </StyledMarqueeWrapper>
+            <StyledMarqueeWrapper>
+              <SiNextdotjs />
+            </StyledMarqueeWrapper>
+            <StyledMarqueeWrapper>
+              <SiWordpress />
+            </StyledMarqueeWrapper>
+            <StyledMarqueeWrapper>
+              <SiFigma />
+            </StyledMarqueeWrapper>
+            <StyledMarqueeWrapper>
+              <SiFramer />
+            </StyledMarqueeWrapper>
+            <StyledMarqueeWrapper>
+              <SiWebflow />
+            </StyledMarqueeWrapper>
+            <StyledMarqueeWrapper>
+              <SiSemrush />
+            </StyledMarqueeWrapper>
+            <StyledMarqueeWrapper>
+              <SiGoogletagmanager />
+            </StyledMarqueeWrapper>
+            <StyledMarqueeWrapper>
+              <SiGoogleanalytics />
+            </StyledMarqueeWrapper>
+          </Marquee>
+        </StyledMarqueeMotion>
+      </StyledTechStackWrapper>
+    </StyledTechStackContainer>
   );
 }

@@ -1,12 +1,14 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 
-import Container from "../Container";
-import Link from "next/link";
+import { Container, Wrapper } from "../Container";
 
-export const StyledFooterWrapper = styled(Container)`
+export const StyledFooterContainer = styled(Container)``;
+
+export const StyledFooterWrapper = styled(Wrapper)`
   display: flex;
   justify-content: space-between;
   align-items: center;

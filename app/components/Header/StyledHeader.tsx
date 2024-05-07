@@ -3,15 +3,18 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
 
-import Container from "../Container";
+import { Container, Wrapper } from "../Container";
 
-export const StyledHeaderWrapper = styled(Container)`
+export const StyledHeaderContainer = styled(Container)`
+  padding-top: 110px;
+  border-bottom: 1px solid rgb(var(--clr-dark));
+`;
+
+export const StyledHeaderWrapper = styled(Wrapper)`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   gap: 64px;
-  border-bottom: 1px solid rgb(var(--clr-dark));
-  padding-top: 110px;
 
   @media (max-width: 992px) {
     flex-direction: column;

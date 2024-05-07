@@ -3,12 +3,15 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
 
-import Container from "../Container";
+import { Container, Wrapper } from "../Container";
 
-export const StyledExperiencesWrapper = styled(Container)`
+export const StyledExperiencesContainer = styled(Container)`
+  border-bottom: 1px solid rgb(var(--clr-dark));
+`;
+
+export const StyledExperiencesWrapper = styled(Wrapper)`
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgb(var(--clr-dark));
 
   @media (max-width: 992px) {
     flex-direction: column;

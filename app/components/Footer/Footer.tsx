@@ -5,6 +5,7 @@ import { FaCodepen, FaDribbble, FaGithub, FaLinkedin } from "react-icons/fa";
 
 import {
   StyledCopyRight,
+  StyledFooterContainer,
   StyledFooterTitle,
   StyledFooterWrapper,
   StyledSiteTitle,
@@ -30,52 +31,54 @@ export function Footer() {
   };
 
   return (
-    <StyledFooterWrapper as="footer">
-      <motion.div
-        initial="offscreen"
-        animate="onscreen"
-        exit="offscreen"
-        variants={titleVariants}
-        ref={ref}
-      >
-        <StyledSiteTitle>MelinKan</StyledSiteTitle>
-        <StyledCopyRight>© 2024 - All rights reserved.</StyledCopyRight>
-      </motion.div>
-      <motion.div
-        initial="offscreen"
-        animate="onscreen"
-        exit="offscreen"
-        variants={titleVariants}
-        ref={ref}
-      >
-        <StyledFooterTitle>Socials</StyledFooterTitle>
-        <StyledSocialsWrapper>
-          <StyledSocialLink
-            href="https://github.com/melinkan"
-            title="Melin Kan Github"
-          >
-            <FaGithub />
-          </StyledSocialLink>
-          <StyledSocialLink
-            href="https://linkedin.com/in/melinkan"
-            title="Melin Kan LinkedIn"
-          >
-            <FaLinkedin />
-          </StyledSocialLink>
-          <StyledSocialLink
-            href="https://codepen.io/melinkan"
-            title="Melin Kan CodePen"
-          >
-            <FaCodepen />
-          </StyledSocialLink>
-          <StyledSocialLink
-            href="https://dribbble.com/melinkan"
-            title="Melin Kan Dribbble"
-          >
-            <FaDribbble />
-          </StyledSocialLink>
-        </StyledSocialsWrapper>
-      </motion.div>
-    </StyledFooterWrapper>
+    <StyledFooterContainer as="footer">
+      <StyledFooterWrapper>
+        <motion.div
+          initial="offscreen"
+          animate="onscreen"
+          exit="offscreen"
+          variants={titleVariants}
+          ref={ref}
+        >
+          <StyledSiteTitle>MelinKan</StyledSiteTitle>
+          <StyledCopyRight>© 2024 - All rights reserved.</StyledCopyRight>
+        </motion.div>
+        <motion.div
+          initial="offscreen"
+          animate="onscreen"
+          exit="offscreen"
+          variants={titleVariants}
+          ref={ref}
+        >
+          <StyledFooterTitle>Socials</StyledFooterTitle>
+          <StyledSocialsWrapper>
+            <StyledSocialLink
+              href="https://github.com/melinkan"
+              title="Melin Kan Github"
+            >
+              <FaGithub />
+            </StyledSocialLink>
+            <StyledSocialLink
+              href="https://linkedin.com/in/melinkan"
+              title="Melin Kan LinkedIn"
+            >
+              <FaLinkedin />
+            </StyledSocialLink>
+            <StyledSocialLink
+              href="https://codepen.io/melinkan"
+              title="Melin Kan CodePen"
+            >
+              <FaCodepen />
+            </StyledSocialLink>
+            <StyledSocialLink
+              href="https://dribbble.com/melinkan"
+              title="Melin Kan Dribbble"
+            >
+              <FaDribbble />
+            </StyledSocialLink>
+          </StyledSocialsWrapper>
+        </motion.div>
+      </StyledFooterWrapper>
+    </StyledFooterContainer>
   );
 }

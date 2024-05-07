@@ -6,6 +6,7 @@ import {
   StyledHeaderSubtitle,
   StyledHeaderTitle,
   StyledHeaderWrapper,
+  StyledHeaderContainer,
   StyledHeaderInfoWrapper,
 } from "./StyledHeader";
 
@@ -50,33 +51,35 @@ const imageVariants = {
 
 export function HeaderHome() {
   return (
-    <StyledHeaderWrapper>
-      <StyledHeaderInfoWrapper>
-        <StyledHeaderTitle
+    <StyledHeaderContainer>
+      <StyledHeaderWrapper>
+        <StyledHeaderInfoWrapper>
+          <StyledHeaderTitle
+            initial="offscreen"
+            animate="onscreen"
+            exit="offscreen"
+            variants={titleVariants}
+          >
+            Hello, I&apos;m Melin
+          </StyledHeaderTitle>
+          <StyledHeaderSubtitle
+            initial="offscreen"
+            animate="onscreen"
+            exit="offscreen"
+            variants={subtitleVariants}
+          >
+            A Web Developer and UI Designer
+          </StyledHeaderSubtitle>
+        </StyledHeaderInfoWrapper>
+        <StyledHeaderImage
           initial="offscreen"
           animate="onscreen"
           exit="offscreen"
-          variants={titleVariants}
+          variants={imageVariants}
         >
-          Hello, I&apos;m Melin
-        </StyledHeaderTitle>
-        <StyledHeaderSubtitle
-          initial="offscreen"
-          animate="onscreen"
-          exit="offscreen"
-          variants={subtitleVariants}
-        >
-          A Web Developer and UI Designer
-        </StyledHeaderSubtitle>
-      </StyledHeaderInfoWrapper>
-      <StyledHeaderImage
-        initial="offscreen"
-        animate="onscreen"
-        exit="offscreen"
-        variants={imageVariants}
-      >
-        <Image src={profileImage} placeholder="blur" alt="Melin Kan" />
-      </StyledHeaderImage>
-    </StyledHeaderWrapper>
+          <Image src={profileImage} placeholder="blur" alt="Melin Kan" />
+        </StyledHeaderImage>
+      </StyledHeaderWrapper>
+    </StyledHeaderContainer>
   );
 }

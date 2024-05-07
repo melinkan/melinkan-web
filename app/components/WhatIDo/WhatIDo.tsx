@@ -2,7 +2,11 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 
-import { StyledWhatIDoGrid, StyledWhatIDoWrapper } from "./StyledWhatIDo";
+import {
+  StyledWhatIDoGrid,
+  StyledWhatIDoContainer,
+  StyledWhatIDoWrapper,
+} from "./StyledWhatIDo";
 import SectionTitle from "../SectionTitles";
 import WhatIDoCard from "./WhatIDoCard";
 
@@ -47,23 +51,25 @@ export function WhatIDo() {
   };
 
   return (
-    <StyledWhatIDoWrapper id="whatido">
-      <SectionTitle title="What i do" />
-      <StyledWhatIDoGrid
-        initial="offscreen"
-        animate="onscreen"
-        exit="offscreen"
-        variants={cardVariants}
-        ref={ref}
-      >
-        {cardData.map((card, index) => (
-          <WhatIDoCard
-            key={index}
-            title={card.title}
-            description={card.description}
-          />
-        ))}
-      </StyledWhatIDoGrid>
-    </StyledWhatIDoWrapper>
+    <StyledWhatIDoContainer id="whatido">
+      <StyledWhatIDoWrapper>
+        <SectionTitle title="What i do" />
+        <StyledWhatIDoGrid
+          initial="offscreen"
+          animate="onscreen"
+          exit="offscreen"
+          variants={cardVariants}
+          ref={ref}
+        >
+          {cardData.map((card, index) => (
+            <WhatIDoCard
+              key={index}
+              title={card.title}
+              description={card.description}
+            />
+          ))}
+        </StyledWhatIDoGrid>
+      </StyledWhatIDoWrapper>
+    </StyledWhatIDoContainer>
   );
 }

@@ -1,15 +1,18 @@
 "use client";
 
-import styled from "styled-components";
-import Container from "../Container";
-import Image from "next/image";
 import { motion } from "framer-motion";
+import styled from "styled-components";
 
-export const StyledTechStackWrapper = styled(Container)`
+import { Container, Wrapper } from "../Container";
+
+export const StyledTechStackContainer = styled(Container)`
+  border-bottom: 1px solid rgb(var(--clr-dark));
+`;
+
+export const StyledTechStackWrapper = styled(Wrapper)`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgb(var(--clr-dark));
 
   @media (max-width: 992px) {
     flex-direction: column;
