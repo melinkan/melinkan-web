@@ -16,6 +16,7 @@ import {
 export function Footer() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  const currentYear = new Date().getFullYear();
 
   const titleVariants = {
     offscreen: { x: -100, opacity: 0 },
@@ -41,7 +42,9 @@ export function Footer() {
           ref={ref}
         >
           <StyledSiteTitle>MelinKan</StyledSiteTitle>
-          <StyledCopyRight>© 2024 - All rights reserved.</StyledCopyRight>
+          <StyledCopyRight>
+            © {currentYear} - All rights reserved.
+          </StyledCopyRight>
         </motion.div>
         <motion.div
           initial="offscreen"
