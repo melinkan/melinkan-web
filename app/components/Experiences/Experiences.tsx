@@ -14,7 +14,20 @@ import {
   StyledExperiencesWrapper,
 } from "./StyledExperiences";
 
-export function Experiences() {
+interface Experience {
+  sys: {
+    id: string;
+  };
+  title: string;
+  description: string;
+  date: string;
+  company: string;
+}
+interface ExperiencesProps {
+  experiences: Array<Experience>;
+}
+
+export function Experiences({ experiences }: ExperiencesProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -42,36 +55,24 @@ export function Experiences() {
           variants={cardVariants}
           ref={ref}
         >
-          <StyledExperienceCard>
-            <StyledExperienceDate>Oct 2022 - Current</StyledExperienceDate>
-            <StyledExperienceTitle>
-              Marketing Web Developer, <i>Commencis</i>
-            </StyledExperienceTitle>
-            <StyledExperienceDescription>
-              As a marketing web developer, I design, develop, and maintain
-              websites using WordPress, JavaScript, and CSS, while also
-              supporting our Web Frontend Team with ReactJS and TypeScript. My
-              role includes integrating analytics with tools like Google Tag
-              Manager and Google Analytics, and optimizing website performance
-              through technical SEO. Additionally, I create visually appealing
-              emails using ActiveCampaign, HTML, and CSS.
-            </StyledExperienceDescription>
-          </StyledExperienceCard>
-          <StyledExperienceCard>
-            <StyledExperienceDate>Jul 2022 - Sep 2022</StyledExperienceDate>
-            <StyledExperienceTitle>
-              Software Intern, <i>Hubtic</i>
-            </StyledExperienceTitle>
-            <StyledExperienceDescription>
-              During my tenure as an intern at Hubtic, I gained valuable
-              experience working on web projects utilizing React. Additionally,
-              I worked on a marketing website that utilized WordPress. This
-              experience allowed me to develop my skills in front-end
-              development.
-            </StyledExperienceDescription>
-          </StyledExperienceCard>
+          {experiences.map((experience) => {
+            return (
+              <StyledExperienceCard key={experience.sys.id}>
+                <StyledExperienceDate>{experience.date}</StyledExperienceDate>
+                <StyledExperienceTitle>
+                  {experience.title}, <i>{experience.company}</i>
+                </StyledExperienceTitle>
+                <StyledExperienceDescription>
+                  {experience.description}
+                </StyledExperienceDescription>
+              </StyledExperienceCard>
+            );
+          })}
         </StyledExperienceContainer>
       </StyledExperiencesWrapper>
     </StyledExperiencesContainer>
   );
+}
+function getAllArticles() {
+  throw new Error("Function not implemented.");
 }
