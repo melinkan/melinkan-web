@@ -4,7 +4,7 @@ import { TechStack } from "./components/TechStack/TechStack";
 import { Experiences } from "./components/Experiences/Experiences";
 import { Footer } from "./components/Footer/Footer";
 import {
-  getAllHeaderHomes,
+  getAllHeaderHome,
   getAllWhatIDo,
   getAllWorkExperiences,
 } from "@/lib/api";
@@ -12,7 +12,7 @@ import {
 export default async function Home() {
   const workExperiences = await getAllWorkExperiences();
   const whatIDo = await getAllWhatIDo();
-  const headerHome = await getAllHeaderHomes();
+  const headerHome = await getAllHeaderHome();
 
   return (
     <>

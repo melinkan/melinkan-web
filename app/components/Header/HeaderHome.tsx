@@ -55,6 +55,11 @@ interface Header {
   };
   greeting: string;
   title: string;
+  image: {
+    url: string;
+    title: string;
+    description: string;
+  };
 }
 interface HeaderHomeProps {
   headerHome: Array<Header>;
@@ -88,7 +93,13 @@ export function HeaderHome({ headerHome }: HeaderHomeProps) {
           exit="offscreen"
           variants={imageVariants}
         >
-          <Image src={profileImage} placeholder="blur" alt="Melin Kan" />
+          <Image
+            src={headerHome[0].image.url}
+            alt="Melin Kan"
+            width={700}
+            height={475}
+            sizes="(max-width: 768px) 300vw, (max-width: 1200px) 200vw"
+          />
         </StyledHeaderImage>
       </StyledHeaderWrapper>
     </StyledHeaderContainer>
