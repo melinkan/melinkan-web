@@ -10,30 +10,20 @@ import {
 import SectionTitle from "../SectionTitles";
 import WhatIDoCard from "./WhatIDoCard";
 
-const cardData = [
-  {
-    title: "Web Development",
-    description:
-      "I build performant and responsive websites and modern web applications using latest technologies.",
-  },
-  {
-    title: "UI Design",
-    description:
-      "I design user-friendly and visually appealing user interfaces that enhance user interaction and satisfaction.",
-  },
-  {
-    title: "SEO",
-    description:
-      "I optimize websites to improve their visibility in search engine results, increasing organic traffic and engagement.",
-  },
-  {
-    title: "Digital Marketing",
-    description:
-      "I develop and implement strategic digital marketing campaigns that drive growth, enhance brand awareness, and increase conversions.",
-  },
-];
+interface WhatIDo {
+  sys: {
+    id: string;
+  };
+  title: string;
+  description: string;
+  date: string;
+  company: string;
+}
+interface WhatIDoProps {
+  whatIDo: Array<WhatIDo>;
+}
 
-export function WhatIDo() {
+export function WhatIDo({ whatIDo }: WhatIDoProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -61,9 +51,9 @@ export function WhatIDo() {
           variants={cardVariants}
           ref={ref}
         >
-          {cardData.map((card, index) => (
+          {whatIDo.map((card) => (
             <WhatIDoCard
-              key={index}
+              key={card.sys.id}
               title={card.title}
               description={card.description}
             />
