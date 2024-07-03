@@ -3,15 +3,20 @@ import { WhatIDo } from "./components/WhatIDo/WhatIDo";
 import { TechStack } from "./components/TechStack/TechStack";
 import { Experiences } from "./components/Experiences/Experiences";
 import { Footer } from "./components/Footer/Footer";
-import { getAllWhatIDo, getAllWorkExperiences } from "@/lib/api";
+import {
+  getAllHeaderHomes,
+  getAllWhatIDo,
+  getAllWorkExperiences,
+} from "@/lib/api";
 
 export default async function Home() {
   const workExperiences = await getAllWorkExperiences();
   const whatIDo = await getAllWhatIDo();
+  const headerHome = await getAllHeaderHomes();
 
   return (
     <>
-      <HeaderHome />
+      <HeaderHome headerHome={headerHome} />
       <WhatIDo whatIDo={whatIDo} />
       <TechStack />
       <Experiences experiences={workExperiences} />

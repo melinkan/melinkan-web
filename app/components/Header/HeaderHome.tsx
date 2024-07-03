@@ -49,7 +49,18 @@ const imageVariants = {
   },
 };
 
-export function HeaderHome() {
+interface Header {
+  sys: {
+    id: string;
+  };
+  greeting: string;
+  title: string;
+}
+interface HeaderHomeProps {
+  headerHome: Array<Header>;
+}
+
+export function HeaderHome({ headerHome }: HeaderHomeProps) {
   return (
     <StyledHeaderContainer>
       <StyledHeaderWrapper>
@@ -60,7 +71,7 @@ export function HeaderHome() {
             exit="offscreen"
             variants={titleVariants}
           >
-            Hello, I&apos;m Melin
+            {headerHome[0].greeting}
           </StyledHeaderTitle>
           <StyledHeaderSubtitle
             initial="offscreen"
@@ -68,7 +79,7 @@ export function HeaderHome() {
             exit="offscreen"
             variants={subtitleVariants}
           >
-            A Web Developer and UI Designer
+            {headerHome[0].title}
           </StyledHeaderSubtitle>
         </StyledHeaderInfoWrapper>
         <StyledHeaderImage
