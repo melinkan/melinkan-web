@@ -7,6 +7,7 @@ import { useInView } from "framer-motion";
 import SectionTitle from "../SectionTitles";
 import {
   StyledMarqueeMotion,
+  StyledMarqueeText,
   StyledMarqueeWrapper,
   StyledTechStackContainer,
   StyledTechStackWrapper,
@@ -57,36 +58,47 @@ export function TechStack() {
           <Marquee direction="right" speed={75}>
             <StyledMarqueeWrapper>
               <SiJavascript />
+              <StyledMarqueeText>JavaScript</StyledMarqueeText>
             </StyledMarqueeWrapper>
             <StyledMarqueeWrapper>
               <SiTypescript />
+              <StyledMarqueeText>TypeScript</StyledMarqueeText>
             </StyledMarqueeWrapper>
             <StyledMarqueeWrapper>
               <IoLogoReact />
+              <StyledMarqueeText>React</StyledMarqueeText>
             </StyledMarqueeWrapper>
             <StyledMarqueeWrapper>
               <SiNextdotjs />
+              <StyledMarqueeText>Next.js</StyledMarqueeText>
             </StyledMarqueeWrapper>
             <StyledMarqueeWrapper>
               <SiWordpress />
+              <StyledMarqueeText>WordPress</StyledMarqueeText>
             </StyledMarqueeWrapper>
             <StyledMarqueeWrapper>
               <SiFigma />
+              <StyledMarqueeText>Figma</StyledMarqueeText>
             </StyledMarqueeWrapper>
             <StyledMarqueeWrapper>
               <SiFramer />
+              <StyledMarqueeText>Framer</StyledMarqueeText>
             </StyledMarqueeWrapper>
             <StyledMarqueeWrapper>
               <SiWebflow />
+              <StyledMarqueeText>Webflow</StyledMarqueeText>
             </StyledMarqueeWrapper>
             <StyledMarqueeWrapper>
               <SiSemrush />
+              <StyledMarqueeText>Semrush</StyledMarqueeText>
             </StyledMarqueeWrapper>
             <StyledMarqueeWrapper>
               <SiGoogletagmanager />
+              <StyledMarqueeText>Google Tag Manager</StyledMarqueeText>
             </StyledMarqueeWrapper>
             <StyledMarqueeWrapper>
               <SiGoogleanalytics />
+              <StyledMarqueeText>Google Analytics 4</StyledMarqueeText>
             </StyledMarqueeWrapper>
           </Marquee>
         </StyledMarqueeMotion>

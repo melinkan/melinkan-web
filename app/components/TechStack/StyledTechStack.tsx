@@ -36,3 +36,8 @@ export const StyledMarqueeWrapper = styled.div`
   margin: 0 36px;
   text-align: center;
 `;
+
+export const StyledMarqueeText = styled.p`
+  font-size: 14px;
+  text-align: center;
+`;
