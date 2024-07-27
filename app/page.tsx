@@ -1,8 +1,8 @@
-import { HeaderHome } from "./components/Header/HeaderHome";
-import { WhatIDo } from "./components/WhatIDo/WhatIDo";
-import { TechStack } from "./components/TechStack/TechStack";
-import { Experiences } from "./components/Experiences/Experiences";
-import { Footer } from "./components/Footer/Footer";
+import { HeroHome } from "@/app/components/Hero/HeroHome";
+import { WhatIDo } from "@/app/components/WhatIDo/WhatIDo";
+import { TechStack } from "@/app/components/TechStack/TechStack";
+import { Experiences } from "@/app/components/Experiences/Experiences";
+import { Footer } from "@/app/components/Footer/Footer";
 import {
   getAllHeaderHome,
   getAllWhatIDo,
@@ -12,11 +12,11 @@ import {
 export default async function Home() {
   const workExperiences = await getAllWorkExperiences();
   const whatIDo = await getAllWhatIDo();
-  const headerHome = await getAllHeaderHome();
+  const heroHome = await getAllHeaderHome();
 
   return (
     <>
-      <HeaderHome headerHome={headerHome} />
+      <HeroHome heroHome={heroHome} />
       <WhatIDo whatIDo={whatIDo} />
       <TechStack />
       <Experiences experiences={workExperiences} />

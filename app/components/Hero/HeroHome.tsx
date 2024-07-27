@@ -1,14 +1,13 @@
 import Image from "next/image";
 
-import profileImage from "@/public/melin-kan.jpg";
 import {
-  StyledHeaderImage,
-  StyledHeaderSubtitle,
-  StyledHeaderTitle,
-  StyledHeaderWrapper,
-  StyledHeaderContainer,
-  StyledHeaderInfoWrapper,
-} from "./StyledHeader";
+  StyledHeroImage,
+  StyledHeroSubtitle,
+  StyledHeroTitle,
+  StyledHeroWrapper,
+  StyledHeroContainer,
+  StyledHeroInfoWrapper,
+} from "./StyledHeroHome";
 
 const titleVariants = {
   offscreen: { x: -100, opacity: 0 },
@@ -49,7 +48,7 @@ const imageVariants = {
   },
 };
 
-interface Header {
+interface Hero {
   sys: {
     id: string;
   };
@@ -61,47 +60,47 @@ interface Header {
     description: string;
   };
 }
-interface HeaderHomeProps {
-  headerHome: Array<Header>;
+interface HeroHomeProps {
+  heroHome: Array<Hero>;
 }
 
-export function HeaderHome({ headerHome }: HeaderHomeProps) {
+export function HeroHome({ heroHome }: HeroHomeProps) {
   return (
-    <StyledHeaderContainer>
-      <StyledHeaderWrapper>
-        <StyledHeaderInfoWrapper>
-          <StyledHeaderTitle
+    <StyledHeroContainer>
+      <StyledHeroWrapper>
+        <StyledHeroInfoWrapper>
+          <StyledHeroTitle
             initial="offscreen"
             animate="onscreen"
             exit="offscreen"
             variants={titleVariants}
           >
-            {headerHome[0].greeting}
-          </StyledHeaderTitle>
-          <StyledHeaderSubtitle
+            {heroHome[0].greeting}
+          </StyledHeroTitle>
+          <StyledHeroSubtitle
             initial="offscreen"
             animate="onscreen"
             exit="offscreen"
             variants={subtitleVariants}
           >
-            {headerHome[0].title}
-          </StyledHeaderSubtitle>
-        </StyledHeaderInfoWrapper>
-        <StyledHeaderImage
+            {heroHome[0].title}
+          </StyledHeroSubtitle>
+        </StyledHeroInfoWrapper>
+        <StyledHeroImage
           initial="offscreen"
           animate="onscreen"
           exit="offscreen"
           variants={imageVariants}
         >
           <Image
-            src={headerHome[0].image.url}
+            src={heroHome[0].image.url}
             alt="Melin Kan"
             width={700}
             height={475}
             sizes="(max-width: 768px) 300vw, (max-width: 1200px) 200vw"
           />
-        </StyledHeaderImage>
-      </StyledHeaderWrapper>
-    </StyledHeaderContainer>
+        </StyledHeroImage>
+      </StyledHeroWrapper>
+    </StyledHeroContainer>
   );
 }

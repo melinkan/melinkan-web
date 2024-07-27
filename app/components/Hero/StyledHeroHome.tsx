@@ -5,12 +5,12 @@ import styled from "styled-components";
 
 import { Container, Wrapper } from "../Container";
 
-export const StyledHeaderContainer = styled(Container)`
+export const StyledHeroContainer = styled(Container)`
   padding-top: 110px;
   border-bottom: 1px solid rgb(var(--clr-dark));
 `;
 
-export const StyledHeaderWrapper = styled(Wrapper)`
+export const StyledHeroWrapper = styled(Wrapper)`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -23,11 +23,11 @@ export const StyledHeaderWrapper = styled(Wrapper)`
   }
 `;
 
-export const StyledHeaderInfoWrapper = styled(motion.div)`
+export const StyledHeroInfoWrapper = styled(motion.div)`
   flex: 3;
 `;
 
-export const StyledHeaderTitle = styled(motion.h1)`
+export const StyledHeroTitle = styled(motion.h1)`
   margin-bottom: 16px;
   font-size: 48px;
   font-weight: 400;
@@ -40,7 +40,7 @@ export const StyledHeaderTitle = styled(motion.h1)`
   }
 `;
 
-export const StyledHeaderSubtitle = styled(motion.h2)`
+export const StyledHeroSubtitle = styled(motion.h2)`
   font-size: 72px;
   font-weight: 500;
   line-height: 1;
@@ -58,7 +58,7 @@ export const StyledHeaderSubtitle = styled(motion.h2)`
   }
 `;
 
-export const StyledHeaderImage = styled(motion.div)`
+export const StyledHeroImage = styled(motion.div)`
   flex: 2;
 
   img {
