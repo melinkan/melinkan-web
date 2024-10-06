@@ -1,4 +1,3 @@
-import { Navbar } from "@/app/components/Navbar/Navbar";
 import { HeroHome } from "@/app/components/Hero/HeroHome";
 import { WhatIDo } from "@/app/components/WhatIDo/WhatIDo";
 import { TechStack } from "@/app/components/TechStack/TechStack";
@@ -17,7 +16,6 @@ export default async function Home() {
 
   return (
     <>
-      <Navbar />
       <HeroHome heroHome={heroHome} />
       <WhatIDo whatIDo={whatIDo} />
       <TechStack />

@@ -2,6 +2,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Syne } from "next/font/google";
+import { Navbar } from "@/app/components/Navbar/Navbar";
 import StyledComponentsRegistry from "./lib/registry";
 import "./globals.css";
 
@@ -21,7 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={syne.className}>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <StyledComponentsRegistry>
+          <Navbar />
+          {children}
+        </StyledComponentsRegistry>
         <Analytics />
         <SpeedInsights />
       </body>
