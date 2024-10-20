@@ -14,7 +14,7 @@ export const StyledFooterWrapper = styled(Wrapper)`
   align-items: center;
   gap: 24px;
 
-  @media (max-width: 992px) {
+  @media (max-width: 640px) {
     flex-direction: column-reverse;
     align-items: flex-start;
   }
