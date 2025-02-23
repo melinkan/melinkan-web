@@ -55,7 +55,7 @@ export function TechStack() {
           variants={cardVariants}
           ref={ref}
         >
-          <Marquee direction="right" speed={75}>
+          <Marquee direction="left" speed={75}>
             <StyledMarqueeWrapper>
               <SiJavascript />
               <StyledMarqueeText>JavaScript</StyledMarqueeText>

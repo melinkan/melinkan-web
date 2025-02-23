@@ -35,19 +35,6 @@ const subtitleVariants = {
   },
 };
 
-const imageVariants = {
-  offscreen: { opacity: 0, scale: 0.5 },
-  onscreen: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      duration: 0.8,
-      delay: 0.5,
-      ease: [0, 0.71, 0.2, 1.01],
-    },
-  },
-};
-
 interface Hero {
   sys: {
     id: string;
@@ -90,7 +77,7 @@ export function HeroHome({ heroHome }: HeroHomeProps) {
           initial="offscreen"
           animate="onscreen"
           exit="offscreen"
-          variants={imageVariants}
+          variants={titleVariants}
         >
           <Image
             src={heroHome[0].image.url}
