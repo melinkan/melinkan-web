@@ -80,7 +80,7 @@ export function HeroHome({ heroHome }: HeroHomeProps) {
           variants={titleVariants}
         >
           <Image
-            src={heroHome[0].image.url}
+            src="/melin-kan.JPEG"
             alt="Melin Kan"
             width={700}
             height={475}
