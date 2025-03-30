@@ -4,7 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import { SlMenu } from "react-icons/sl";
 
-import ScrollLink from "@/app/components/ScrollLink";
 import {
   StyledMenu,
   StyledNavbar,
@@ -22,6 +21,10 @@ export function Navbar() {
     setIsNavbarVisible((prevState) => !prevState);
   };
 
+  const closeNavbar = () => {
+    setIsNavbarVisible(false);
+  };
+
   return (
     <StyledNavbarContainer as="header">
       <StyledNavbarWrapper>
@@ -31,10 +34,14 @@ export function Navbar() {
         <nav>
           <StyledNavbar isvisible={isNavbarVisible}>
             <StyledNavbarItem>
-              <Link href="/">Home Page</Link>
+              <Link href="/" onClick={closeNavbar}>
+                Home Page
+              </Link>
             </StyledNavbarItem>
             <StyledNavbarItem>
-              <Link href="/film-archive">Film Archive</Link>
+              <Link href="/film-archive" onClick={closeNavbar}>
+                Film Archive
+              </Link>
             </StyledNavbarItem>
           </StyledNavbar>
         </nav>
