@@ -6,7 +6,7 @@ import styled from "styled-components";
 import { Container, Wrapper } from "@/app/components/Container";
 
 export const StyledPageTitle = styled(motion.h1)`
-  padding-top: 110px;
+  padding-top: 40px;
   font-size: 40px;
   font-weight: 700;
   line-height: 1.5;

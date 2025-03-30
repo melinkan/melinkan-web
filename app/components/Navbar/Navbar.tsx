@@ -31,13 +31,10 @@ export function Navbar() {
         <nav>
           <StyledNavbar isvisible={isNavbarVisible}>
             <StyledNavbarItem>
-              <ScrollLink href="#whatido">What I Do</ScrollLink>
+              <Link href="/">Home Page</Link>
             </StyledNavbarItem>
             <StyledNavbarItem>
-              <ScrollLink href="#techstack">Tech Stack</ScrollLink>
-            </StyledNavbarItem>
-            <StyledNavbarItem>
-              <ScrollLink href="#experiences">Experiences</ScrollLink>
+              <Link href="/film-archive">Film Archive</Link>
             </StyledNavbarItem>
           </StyledNavbar>
         </nav>
