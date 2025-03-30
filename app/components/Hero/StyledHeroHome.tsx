@@ -6,7 +6,7 @@ import styled from "styled-components";
 import { Container, Wrapper } from "../Container";
 
 export const StyledHeroContainer = styled(Container)`
-  padding-top: 110px;
+  padding-top: 148px;
   border-bottom: 1px solid rgb(var(--clr-dark));
 `;
 
