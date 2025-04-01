@@ -1,7 +1,14 @@
 "use client";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { FaCodepen, FaDribbble, FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaCodepen,
+  FaDribbble,
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaXTwitter,
+} from "react-icons/fa6";
 
 import {
   StyledCopyRight,
@@ -56,26 +63,50 @@ export function Footer() {
           <StyledFooterTitle>Socials</StyledFooterTitle>
           <StyledSocialsWrapper>
             <StyledSocialLink
+              href="https://instagram.com/melin.creative"
+              title="Melin Kan Instagram"
+              rel="nofollow"
+              target="_blank"
+            >
+              <FaInstagram />
+            </StyledSocialLink>
+            <StyledSocialLink
+              href="https://twitter.com/melin_kan"
+              title="Melin Kan Twitter"
+              rel="nofollow"
+              target="_blank"
+            >
+              <FaXTwitter />
+            </StyledSocialLink>
+            <StyledSocialLink
               href="https://github.com/melinkan"
               title="Melin Kan Github"
+              rel="nofollow"
+              target="_blank"
             >
               <FaGithub />
             </StyledSocialLink>
             <StyledSocialLink
               href="https://linkedin.com/in/melinkan"
               title="Melin Kan LinkedIn"
+              rel="nofollow"
+              target="_blank"
             >
               <FaLinkedin />
             </StyledSocialLink>
             <StyledSocialLink
               href="https://codepen.io/melinkan"
               title="Melin Kan CodePen"
+              rel="nofollow"
+              target="_blank"
             >
               <FaCodepen />
             </StyledSocialLink>
             <StyledSocialLink
               href="https://dribbble.com/melinkan"
               title="Melin Kan Dribbble"
+              rel="nofollow"
+              target="_blank"
             >
               <FaDribbble />
             </StyledSocialLink>

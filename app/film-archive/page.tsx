@@ -6,7 +6,7 @@ import { getImagesFromDirectory } from "@/app/lib/images";
 import ClientGallery from "@/app/film-archive/ClientGallery";
 
 export const metadata: Metadata = {
-  title: "Visuals - Melin Kan",
+  title: "Film Archive - Melin Kan",
   description: "A collection of visuals created and photographed by Melin Kan.",
 };
 
